@@ -1,0 +1,233 @@
+@font-face {
+    font-family: 'Candal';
+    src: url('Candal.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TangerineRegular';
+    src: url('Tangerine/Tangerine_Regular-webfont.eot');
+    src: url('Tangerine/Tangerine_Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Tangerine/Tangerine_Regular-webfont.woff') format('woff'),
+         url('Tangerine/Tangerine_Regular-webfont.ttf') format('truetype'),
+         url('Tangerine/Tangerine_Regular-webfont.svg#TangerineRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TangerineBold';
+    src: url('Tangerine/Tangerine_Bold-webfont.eot');
+    src: url('Tangerine/Tangerine_Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Tangerine/Tangerine_Bold-webfont.woff') format('woff'),
+         url('Tangerine/Tangerine_Bold-webfont.ttf') format('truetype'),
+         url('Tangerine/Tangerine_Bold-webfont.svg#TangerineBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BallparkWeiner';
+    src: url('Ballpark/ballpark_weiner-webfont.eot');
+    src: url('Ballpark/ballpark_weiner-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Ballpark/ballpark_weiner-webfont.woff') format('woff'),
+         url('Ballpark/ballpark_weiner-webfont.ttf') format('truetype'),
+         url('Ballpark/ballpark_weiner-webfont.svg#BallparkWeiner') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KaushanScriptRegular';
+    src: url('Kaushan/KaushanScript-Regular-webfont.eot');
+    src: url('Kaushan/KaushanScript-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Kaushan/KaushanScript-Regular-webfont.woff') format('woff'),
+         url('Kaushan/KaushanScript-Regular-webfont.ttf') format('truetype'),
+         url('Kaushan/KaushanScript-Regular-webfont.svg#KaushanScriptRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LandliebeRegular';
+    src: url('Landliebe/Landliebe-webfont.eot');
+    src: url('Landliebe/Landliebe-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Landliebe/Landliebe-webfont.woff') format('woff'),
+         url('Landliebe/Landliebe-webfont.ttf') format('truetype'),
+         url('Landliebe/Landliebe-webfont.svg#LandliebeRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LearningCurveDashedProRegular';
+    src: url('Learning/LearningCurveDashed_OT-webfont.eot');
+    src: url('Learning/LearningCurveDashed_OT-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Learning/LearningCurveDashed_OT-webfont.woff') format('woff'),
+         url('Learning/LearningCurveDashed_OT-webfont.ttf') format('truetype'),
+         url('Learning/LearningCurveDashed_OT-webfont.svg#LearningCurveDashedProRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'LearningCurveProRegular';
+    src: url('Learning/LearningCurve_OT-webfont.eot');
+    src: url('Learning/LearningCurve_OT-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Learning/LearningCurve_OT-webfont.woff') format('woff'),
+         url('Learning/LearningCurve_OT-webfont.ttf') format('truetype'),
+         url('Learning/LearningCurve_OT-webfont.svg#LearningCurveProRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'ProclamateLight';
+    src: url('Proclamate/proclamate_light-webfont.eot');
+    src: url('Proclamate/proclamate_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Proclamate/proclamate_light-webfont.woff') format('woff'),
+         url('Proclamate/proclamate_light-webfont.ttf') format('truetype'),
+         url('Proclamate/proclamate_light-webfont.svg#ProclamateLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ProclamateHeavy';
+    src: url('Proclamate/proclamate_heavy-webfont.eot');
+    src: url('Proclamate/proclamate_heavy-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Proclamate/proclamate_heavy-webfont.woff') format('woff'),
+         url('Proclamate/proclamate_heavy-webfont.ttf') format('truetype'),
+         url('Proclamate/proclamate_heavy-webfont.svg#ProclamateHeavy') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ProclamateIncisedHeavy';
+    src: url('Proclamate/proclamate_incised-webfont.eot');
+    src: url('Proclamate/proclamate_incised-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Proclamate/proclamate_incised-webfont.woff') format('woff'),
+         url('Proclamate/proclamate_incised-webfont.ttf') format('truetype'),
+         url('Proclamate/proclamate_incised-webfont.svg#ProclamateIncisedHeavy') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'VitaminRegular';
+    src: url('Vitamin/VITAMIN_-webfont.eot');
+    src: url('Vitamin/VITAMIN_-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Vitamin/VITAMIN_-webfont.woff') format('woff'),
+         url('Vitamin/VITAMIN_-webfont.ttf') format('truetype'),
+         url('Vitamin/VITAMIN_-webfont.svg#VitaminRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'VitaminoutlinedRegular';
+    src: url('Vitamin/VITAMINO-webfont.eot');
+    src: url('Vitamin/VITAMINO-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Vitamin/VITAMINO-webfont.woff') format('woff'),
+         url('Vitamin/VITAMINO-webfont.ttf') format('truetype'),
+         url('Vitamin/VITAMINO-webfont.svg#VitaminoutlinedRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'YukarimobileRegular';
+    src: url('Yukarimobile/yukarimobil-webfont.eot');
+    src: url('Yukarimobile/yukarimobil-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Yukarimobile/yukarimobil-webfont.woff') format('woff'),
+         url('Yukarimobile/yukarimobil-webfont.ttf') format('truetype'),
+         url('Yukarimobile/yukarimobil-webfont.svg#YukarimobileRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BevanRegular';
+    src: url('Bevan/Bevan.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SansationRegular';
+    src: url('Sansation/Sansation_Regular-webfont.eot');
+    src: url('Sansation/Sansation_Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Sansation/Sansation_Regular-webfont.woff') format('woff'),
+         url('Sansation/Sansation_Regular-webfont.ttf') format('truetype'),
+         url('Sansation/Sansation_Regular-webfont.svg#SansationRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'SansationLight';
+    src: url('Sansation/Sansation_Light-webfont.eot');
+    src: url('Sansation/Sansation_Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Sansation/Sansation_Light-webfont.woff') format('woff'),
+         url('Sansation/Sansation_Light-webfont.ttf') format('truetype'),
+         url('Sansation/Sansation_Light-webfont.svg#SansationLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'SansationBold';
+    src: url('Sansation/Sansation_Bold-webfont.eot');
+    src: url('Sansation/Sansation_Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Sansation/Sansation_Bold-webfont.woff') format('woff'),
+         url('Sansation/Sansation_Bold-webfont.ttf') format('truetype'),
+         url('Sansation/Sansation_Bold-webfont.svg#SansationBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'SansationLightLightItalic';
+    src: url('Sansation/Sansation_Light_Italic-webfont.eot');
+    src: url('Sansation/Sansation_Light_Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Sansation/Sansation_Light_Italic-webfont.woff') format('woff'),
+         url('Sansation/Sansation_Light_Italic-webfont.ttf') format('truetype'),
+         url('Sansation/Sansation_Light_Italic-webfont.svg#SansationLightLightItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'SansationItalic';
+    src: url('Sansation/Sansation_Italic-webfont.eot');
+    src: url('Sansation/Sansation_Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Sansation/Sansation_Italic-webfont.woff') format('woff'),
+         url('Sansation/Sansation_Italic-webfont.ttf') format('truetype'),
+         url('Sansation/Sansation_Italic-webfont.svg#SansationItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'SansationBoldItalic';
+    src: url('Sansation/Sansation_Bold_Italic-webfont.eot');
+    src: url('Sansation/Sansation_Bold_Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Sansation/Sansation_Bold_Italic-webfont.woff') format('woff'),
+         url('Sansation/Sansation_Bold_Italic-webfont.ttf') format('truetype'),
+         url('Sansation/Sansation_Bold_Italic-webfont.svg#SansationBoldItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+

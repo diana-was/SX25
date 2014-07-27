@@ -1,0 +1,10 @@
+- copy clouder id_rsa to slave
+- copy public key to clouder on controller
+- Start tunnel for database
+- Set in config/config.ini:
+	∘ myServer = "127.0.0.1:44444"
+- Create writetable directory ~/images and create symlink inside public_html
+
+
+Note: For both php, specify host as 127.0.0.1 NOT "localhost" or it will connect to the socket
+

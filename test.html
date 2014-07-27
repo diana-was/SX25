@@ -1,0 +1,157 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<title>More Web Info</title>
+<meta name="description" content="More Web Info">
+<meta name="keywords" content="Human Resource Careers,">
+
+<link rel="shortcut icon" href="images/QA_2.ico" />
+
+<link href="http://127.0.0.1:100/sx25themes/question_answer_base/question_answer_base.css" rel="stylesheet" type="text/css"> 
+<link rel="stylesheet" href="http://127.0.0.1:100/sx25themes/csslibrary/more-webinfo.info.css" type="text/css"/>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+<script src="http://127.0.0.1:100/sx25themes/question_answer_base/tab-widget.js" type="text/javascript"></script>
+<script>
+$(function(){
+	var currentDate = new Date();
+	var hour = currentDate.getUTCHours()*100;
+	var minutes = currentDate.getUTCMinutes();
+	var current = hour+minutes;
+	if(current>100 && current<200)
+		getCheapAds();
+});  
+function getCheapAds(){
+	// check for empty sitehost
+	var URLbottom = $('.URLbottom');
+	URLbottom.each(function(index) {
+		var sitehost = $(this).text().trim(); 
+		if(null==sitehost || sitehost==''){
+			bannedStr = 'no site host';
+			saveBannedDomain(bannedStr);
+			return;
+		}
+	});
+	// check for sitehost in list
+	var query = 'http://webezines.kwithost.com/sx25_ajax.php?action=cheapAdsList&format=json&callback=?';
+	$.getJSON(query, function(data){
+		for(x in data){
+			URLbottom.each(function(index) {
+				var sitehost = $(this).text().trim();
+				var n = sitehost.indexOf(data[x].cheapad_sitehost);
+				if(sitehost==data[x].cheapad_sitehost || n!=-1){
+					bannedStr = 'There is url in cheapads table - '+data[x]+'.';
+					saveBannedDomain(bannedStr);
+					return;
+				}
+			});
+		}
+	});
+}
+   
+function saveBannedDomain(bannedStr)
+{
+	domainUrl = '{DOMAIN}';
+	keyword = '{KEYWORDS}';
+	var query = 'http://webezines.kwithost.com/sx25_ajax.php?action=setBanParked&domain='+domainUrl+'&keyword='+keyword+'&banned_reason='+bannedStr+'&format=json&callback=?';
+	$.getJSON(query, function(data){  return; });
+}
+
+</script>
+</head>
+
+<body id="home">
+
+                 <div style="text-align:right;font-size: 10pt;color:#ccc;padding-top:2px;">Sponsored Links</div>
+               <div>
+   <a class="URLtop" rel="nofollow" onclick="javascript:window.open('');return false;" href="">123</a><br>
+   <a class="URLtext" rel="nofollow" onclick="javascript:window.open('');return false;" href="">test1</a><br>
+   <a class="URLbottom" rel="nofollow" onclick="javascript:window.open('');return false;" href="">www.yahoo.com</a><br><br>
+</div><div>
+   <a class="URLtop" rel="nofollow" onclick="javascript:window.open('');return false;" href="">345</a><br>
+   <a class="URLtext" rel="nofollow" onclick="javascript:window.open('');return false;" href="">test2</a><br>
+   <a class="URLbottom" rel="nofollow" onclick="javascript:window.open('');return false;" href="">www.google.com</a><br><br>
+</div><div>
+   <a class="URLtop" rel="nofollow" onclick="javascript:window.open('');return false;" href="">456</a><br>
+   <a class="URLtext" rel="nofollow" onclick="javascript:window.open('');return false;" href="">test3</a><br>
+   <a class="URLbottom" rel="nofollow" onclick="javascript:window.open('');return false;" href="">corazon.com</a><br><br>
+</div>
+       
+<div>
+	<!-- Goal Module -->
+	<div class="goal">                                            
+           <div class="left">
+				<img width="50" height="50" class="avatar" src="{GOAL_USER_PHOTO}" >
+           </div>
+                                          
+           <div class="left goalMain">
+                  <h4>{GOAL_SUBJECT}</h4>
+                  <p>{GOAL_CONTENT}</p>                         
+                  <div class="questionByline">                                                    
+                        <img alt="Answers" src="num-answer-icon.jpg">
+                                                  
+                        <span class="answers">{GOAL_STATUS} ... </span><a href="result.php?Keywords={GOAL_KEYWORD}&goal_id={GOAL_ID}">[more]</a><br />
+                        <span>By: <a href="result.php?Keywords={GOAL_KEYWORD}&goal_id={GOAL_ID}">{GOAL_COMPLETION}</a></span> <span class="goal_date">{GOAL_START_DATE}</span>                                                   
+                  </div>
+           </div>
+                                           
+           <div class="clear"></div>
+	</div>
+	
+	
+<div id="goal_{GOAL_ID}" class="goal">
+		<div class="category">{GOAL_KEYWORD}</div>
+		<div class="title">{GOAL_SUBJECT}</div>
+		<div class="body">{GOAL_CONTENT}</div>
+		<ul>
+			<li class="start_date"><span>Goal Start Date: </span>{GOAL_START_DATE}</li>
+			<li class="end_date"><span>Target Completion Date: </span>{GOAL_TARGET_DATE}</li>
+			<li class="start_point"><span>Started At: </span>{GOAL_START_STATUS}</li>
+			<li class="end_point"><span>Target: </span>{GOAL_TARGET_STATUS}</li>
+		</ul>
+		<a class="more_link showing_details">Show Less</a>
+
+<div style="display: block;" class="more_div" id="comments_{GOAL_ID}">
+
+	<div class="fb1">
+		<div class="columns">
+	
+			<div class="leftwrap">
+				<div class="lefttop">
+							
+					<div class="module results_cms_comment">
+					
+					<div class="frame">
+					
+						<div class="hgroup"><h2>Comments</h2></div>
+						
+						<div class="contents">
+						<ul>
+						{GOAL_COMMENTS}
+						</ul>
+						</div>
+					
+					</div> 
+					
+					</div> <!-- results_cms_comment -->
+				
+				</div><!-- lefttop -->
+			</div><!-- leftwrap -->
+			
+			<div class="clear"></div>
+		</div><!-- columns -->
+		
+		<div class="bottom"></div>
+	</div><!-- fb1 -->
+</div> <!-- more_div -->
+</div>	
+
+
+<li>
+<div class="node_title"></div>
+<div class="avatar_frame"><a href="/member/53805.html" class="profile_link"><img src="/solo/avatar?id=53805" class="avatar"></a></div>
+<div class="node_head"></div>
+<div class="node_body">You can do it Mike! We will all be rooting for you! :)</div>
+<div class="author_name"><span>Answered by </span><a href="/member/53805.html">Heather H.</a><span class="post"></span></div>
+<div class="node_tags"></div>
+</li>
+
+</body>
+</html>

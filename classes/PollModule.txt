@@ -1,0 +1,44 @@
+About Poll Module in SX25
+
+1. Poll_class in PollModule.php 
+
+2. table "polls" contain all of description information of individual poll
+
+3. table "votes" record detail vote data of individual domain and its polls
+
+
+
+
+5. database structure
+
+CREATE TABLE IF NOT EXISTS `polls` (
+  `id` int(9) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `description` varchar(5000) NOT NULL,
+  `detail` varchar(2000) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+
+--
+-- Dumping data for table `polls`
+--
+
+INSERT INTO `polls` (`id`, `name`, `description`, `detail`) VALUES
+(1, 'vote1', 'only arabic number', 'a:3:{i:0;s:1:"1";i:1;s:1:"2";i:2;s:1:"3";}'),
+(2, 'vote2', 'number', 'a:3:{i:0;s:3:"one";i:1;s:3:"two";i:2;s:5:"three";}'),
+(3, 'vote3', 'sequence', 'a:3:{i:0;s:5:"first";i:1;s:6:"second";i:2;s:5:"third";}');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `votes`
+--
+
+CREATE TABLE IF NOT EXISTS `votes` (
+  `id` int(9) NOT NULL AUTO_INCREMENT,
+  `domain_id` int(9) NOT NULL,
+  `poll_id` int(9) NOT NULL,
+  `vote_detail` varchar(4000) NOT NULL,
+  `active` int(2) NOT NULL DEFAULT '1',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=12 ;

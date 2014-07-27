@@ -1,0 +1,49 @@
+a.URLtop {
+        color:#00E;
+        text-decoration:underline;
+}
+
+a.URLbottom { 
+        color:#008000;
+        text-decoration:none;
+}
+
+a.URLtext { 
+        text-decoration:none;
+        color:#000;
+}
+
+.sponsoredresults {
+        background-image: url(/css_is.php<?php echo $query;?>);
+        background-repeat: no-repeat;
+        padding:4px 0px 0px 15px;
+        font-size:10px; 
+        color:#999; 
+}
+
+#results {
+        margin:20px 0px 10px 0px; 
+        background-color:#FFFFFF; 
+}
+
+#results p { 
+        margin:5px 0px 10px 0px; 
+        padding:0px 15px 0px 15px;  
+        width:450px; 
+}
+
+.URLtop {
+        font-weight: normal;
+        font-size: 12pt;
+        text-decoration:underline;
+}
+
+.URLbottom { 
+        color:#008000; 
+        text-decoration:none; 
+}
+
+.URLtext { 
+        text-decoration:none;
+        color:#000;
+}
